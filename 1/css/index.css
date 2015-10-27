@@ -1,28 +1,15 @@
-body {
-    /*display: flex;
-    min-height: 100vh;
-    flex-direction: column;*/
-    padding-left: 260px;
-
-}
-/*main {
-	flex: 1 0 auto;
-}*/
-.side-nav li {
+.no-pad {
     padding: 0px !important;
 }
 .underline {
 	text-decoration: underline;
 }
-.side-nav li:first-child:hover {
+.side-nav li:hover {
     background-color: white;
 }
-.side-nav a {
+.side-nav .slider a {
 	height: 48px;
 	line-height: 48px;
-}
-.headbuts a{
-  margin-top: 10px;
 }
 .overl {
   position: absolute;
@@ -30,8 +17,7 @@ body {
   left: 0px;
   height: 100%;
   width: 100%;
-  background: #fff;
-  opacity: 0.65;
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%;
   z-index: 1;
 }
 .slider#promo p{
@@ -45,15 +31,19 @@ body {
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-
-.side-nav li:hover, .side-nav li.active {
-    background-color: #fff;
+#p0 {
+  min-height: 100vh;
+}
+btn, .btn-large, .btn-flat {
+    text-transform: capitalize;
+}
+._middle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width : 992px) {
-  body {
-    padding-left: 0 !important;
-  }
   .slider#promo p{
     font-size: 28px !important;
   }   

@@ -5,20 +5,12 @@ $( document ).ready(function(){
 	
 
 	$('.parallax').parallax();
-    $('.scrollspy').scrollSpy();
-	if($(window).width() > 992){
-		$(".button-collapse").sideNav({
-	      	menuWidth: 260, // Default is 240
-	      	edge: 'left',
-	      	closeOnClick: false
-	    });
-	}else{
-		$(".button-collapse").sideNav({
-	      	menuWidth: 260, // Default is 240
-	      	edge: 'left',
-	      	closeOnClick: true
-	    });
-	}
+
+	$(".button-collapse").sideNav({
+      	menuWidth: 300, // Default is 240
+      	edge: 'left',
+      	closeOnClick: true
+    });
 
 	function go_to_this(id) {
 		$('html, body').animate({ scrollTop: document.getElementById(id).offsetTop + 'px'}, 1100);
