@@ -43,8 +43,48 @@ btn, .btn-large, .btn-flat {
   justify-content: center;
 }
 
+.blink {
+  animation: blink 2s steps(5, start) infinite;
+  -webkit-animation: blink 2s steps(5, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+.list_with_icons>div {
+	display: inline;
+}
+.side_icons {
+	float: left;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	margin: 0px 10% 0px 0px;
+}
+.list_with_icons_text {
+}
+.side_icons i {
+	font-size: 3rem;
+}
+.promo_but {
+	margin-top: 10vh;
+}
 @media only screen and (max-width : 992px) {
   .slider#promo p{
     font-size: 28px !important;
-  }   
+  }
+}
+
+@media only screen and (max-height: 370px) {
+	.promo_but {
+		position: absolute;
+		bottom: 1px;
+		left: 1px;
+	}
 }

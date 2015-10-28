@@ -1,28 +1,15 @@
-body {
-    /*display: flex;
-    min-height: 100vh;
-    flex-direction: column;*/
-    padding-left: 260px;
-
-}
-/*main {
-	flex: 1 0 auto;
-}*/
-.side-nav li {
+.no-pad {
     padding: 0px !important;
 }
 .underline {
 	text-decoration: underline;
 }
-.side-nav li:first-child:hover {
+.side-nav li:hover {
     background-color: white;
 }
-.side-nav a {
+.side-nav .slider a {
 	height: 48px;
 	line-height: 48px;
-}
-.headbuts a{
-  margin-top: 10px;
 }
 .overl {
   position: absolute;
@@ -30,8 +17,7 @@ body {
   left: 0px;
   height: 100%;
   width: 100%;
-  background: #fff;
-  opacity: 0.65;
+  background: rgba(255, 255, 255, 0.5) none repeat scroll 0% 0%;
   z-index: 1;
 }
 .slider#promo p{
@@ -45,12 +31,60 @@ body {
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+#p0 {
+  min-height: 100vh;
+}
+btn, .btn-large, .btn-flat {
+    text-transform: capitalize;
+}
+._middle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-@media only screen and (max-width : 992px) {
-  body {
-    padding-left: 0 !important;
+.blink {
+  animation: blink 2s steps(5, start) infinite;
+  -webkit-animation: blink 2s steps(5, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
   }
+}
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+.list_with_icons>div {
+	display: inline;
+}
+.side_icons {
+	float: left;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	margin: 0px 10% 0px 0px;
+}
+.list_with_icons_text {
+}
+.side_icons i {
+	font-size: 3rem;
+}
+.promo_but {
+	margin-top: 10vh;
+}
+@media only screen and (max-width : 992px) {
   .slider#promo p{
     font-size: 28px !important;
-  }   
+  }
+}
+
+@media only screen and (max-height: 370px) {
+	.promo_but {
+		position: absolute;
+		bottom: 1px;
+		left: 1px;
+	}
 }
