@@ -1,5 +1,5 @@
 $( document ).ready(function(){
-	$('.slider#promo').slider({full_width: true, indicators: true, interval: 15000});
+	$('.slider#promo').slider({full_width: true, indicators: false, interval: 15000});
 	$('.slider#logo').slider({full_width: true, indicators: false, height: 240, interval: 10000});
 	$('.tooltipped').tooltip({delay: 1});
 	
