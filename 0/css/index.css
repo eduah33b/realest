@@ -1,3 +1,6 @@
+body {
+  padding-left: 300px;
+}
 .no-pad {
     padding: 0px !important;
 }
@@ -5,7 +8,7 @@
 	text-decoration: underline;
 }
 .side-nav li:hover {
-    background-color: white;
+    background-color: transparent;
 }
 .side-nav .slider a {
 	height: 48px;
@@ -34,7 +37,7 @@
 #p0 {
   min-height: 100vh;
 }
-btn, .btn-large, .btn-flat {
+.btn, .btn-large, .btn-flat {
     text-transform: capitalize;
 }
 ._middle{
@@ -65,7 +68,7 @@ btn, .btn-large, .btn-flat {
 	width: 64px;
 	height: 64px;
 	border-radius: 50%;
-	margin: 0px 10% 0px 0px;
+	margin: 0px 10% 30px 0px;
 }
 .list_with_icons_text {
 }
@@ -74,17 +77,22 @@ btn, .btn-large, .btn-flat {
 }
 .promo_but {
 	margin-top: 10vh;
+  font-style: italic;
 }
 @media only screen and (max-width : 992px) {
   .slider#promo p{
     font-size: 28px !important;
   }
+  body {
+    padding-left: 0px;
+  }
 }
 
 @media only screen and (max-height: 370px) {
 	.promo_but {
-		position: absolute;
+    margin-top: 1px;
+		/*position: absolute;
 		bottom: 1px;
-		left: 1px;
+		left: 1px;*/
 	}
 }

@@ -9,7 +9,7 @@ $( document ).ready(function(){
 	$(".button-collapse").sideNav({
       	menuWidth: 300, // Default is 240
       	edge: 'left',
-      	closeOnClick: true
+      	closeOnClick: false
     });
 
 	function go_to_this(id) {

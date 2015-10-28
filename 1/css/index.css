@@ -5,7 +5,7 @@
 	text-decoration: underline;
 }
 .side-nav li:hover {
-    background-color: white;
+    background-color: transparent;
 }
 .side-nav .slider a {
 	height: 48px;
@@ -34,7 +34,7 @@
 #p0 {
   min-height: 100vh;
 }
-btn, .btn-large, .btn-flat {
+.btn, .btn-large, .btn-flat {
     text-transform: capitalize;
 }
 ._middle{
