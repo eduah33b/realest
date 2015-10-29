@@ -1,3 +1,7 @@
+body {
+  padding-left: 300px;
+  overflow-x: hidden;
+}
 .no-pad {
     padding: 0px !important;
 }
@@ -17,7 +21,7 @@
   left: 0px;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%;
+  background: rgba(255, 255, 255, 0.5) none repeat scroll 0% 0%;
   z-index: 1;
 }
 .slider#promo p{
@@ -65,7 +69,7 @@
 	width: 64px;
 	height: 64px;
 	border-radius: 50%;
-	margin: 0px 10% 0px 0px;
+	margin: 0px 10% 30px 0px;
 }
 .list_with_icons_text {
 }
@@ -73,18 +77,23 @@
 	font-size: 3rem;
 }
 .promo_but {
-	margin-top: 10vh;
+	margin-top: 5vh;
+  font-style: italic;
 }
 @media only screen and (max-width : 992px) {
   .slider#promo p{
     font-size: 28px !important;
   }
+  body {
+    padding-left: 0px;
+  }
 }
 
 @media only screen and (max-height: 370px) {
 	.promo_but {
-		position: absolute;
+    margin-top: 1px;
+		/*position: absolute;
 		bottom: 1px;
-		left: 1px;
+		left: 1px;*/
 	}
 }
