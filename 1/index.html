@@ -2,54 +2,57 @@
 <html>
 	<head>
     	<title>Real Estate and Project Services</title>
-		<!--Import materialize.css-->
+		<!--*.css-->
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 		<link type="text/css" rel="stylesheet" href="css/index.css"  media="screen,projection"/>
 		<link type="text/css" rel="stylesheet" href="css/pe-icon-social.css"  media="screen,projection"/>
+		<link rel="stylesheet" href="css/animations.css">
 
-		<!--Import jQuery before materialize.js-->
-		<script src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/materialize.min.js"></script>
-		<script type="text/javascript" src="js/index.js"></script>
+	    <!--[if lte IE 9]>
+	      <link href='css/animations-ie-fix.css' rel='stylesheet'>
+	    <![endif]-->
+
+		<!--Import *.js-->
+		<script src="js/jquery.min.js"></script>		
 
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     </head>
     <body>
-    	<ul id="slide-out" class="side-nav">
+    	<ul id="slide-out" class="side-nav fixed">
 			<li class="no-pad" style="height: 240px;">
 			  	<div class="slider" id="logo">
 			    	<ul class="slides white">
-			      		<li class="transparent">
+			      		<li class="blue darken-4">
 			      			<img src="">
 					        <div class="caption left-align">
-					          	<h5 class="red-text">Promotion!</h5>
-					          	<p class="red-text">Save up to 55% of the conventional Cost of home acquisition - Build your home with us!</p>
+					          	<h5 class="white-text">Promotion!</h5>
+					          	<p class="white-text">Save up to 55% of the conventional Cost of home acquisition - Build your home with us!</p>
 					        </div>
 					    </li>
-					    <li class="transparent">
+					    <li class="red darken-4">
 					        <div class="caption right-align">
-					          	<h5 class="red-text">Promotion!</h5>
-					          	<p class="red-text">Pay for only the real cost of your home; cut out unearned profits</p>
+					          	<h5 class="white-text">Promotion!</h5>
+					          	<p class="white-text">Pay for only the real cost of your home; cut out unearned profits</p>
 					        </div>
 					    </li>
-					    <li class="transparent">
+					    <li class="purple darken-4">
 					        <div class="caption right-align">
-					          	<h5 class="red-text">Promotion!</h5>
-					          	<p class="red-text">Home acquisition should <span class="underline">not</span> cost an arm and a leg because it is fundamental</p>
+					          	<h5 class="white-text">Promotion!</h5>
+					          	<p class="white-text">Home acquisition should <span class="underline">not</span> cost an arm and a leg because it is fundamental</p>
 					        </div>
 					    </li>
-					    <li class="transparent">
+					    <li class="pink darken-4">
 					        <div class="caption right-align">
-					          	<h5 class="red-text">Why Wait?</h5>
-					          	<p class="red-text"><a onclick="go_to('footer');" class="btn-flt white waves-effect waves-light tooltipped blue-text" data-position="bottom" data-delay="50" data-tooltip="Contact us">Kindly Contact us</a> Now!</p>
+					          	<h5 class="white-text">Why Wait?</h5>
+					          	<p class="white-text"><a onclick="go_to('footer');" class="btn-flt white waves-effect waves-light tooltipped blue-text" data-position="bottom" data-delay="50" data-tooltip="Contact us">Kindly Contact us</a> Now!</p>
 					        </div>
 					    </li>
 			    	</ul>
 			  	</div>
 			</li>
 		    <li>
-				<h5>About Us - Real Estate And Project Services</h5>
+				<h5 class="blue-text text-darken-4">About Us - Real Estate And Project Services</h5>
 				<p>We are a professional firm with expertise in estate and valuation surveying, land management and project management.
 
 				Our passion is to provide service with intergrity. </p>
@@ -57,18 +60,18 @@
 				<a onclick="go_to('p0');" class="blue-text">About our services</a>
 		    </li>
 		</ul>
-		<a style="position: fixed; top:10px; right: 10px; z-index: 3;" class="btn-floating btn-flat btn-large waves-effect waves-light button-collapse blue darken-4" data-activates="slide-out"><i class="white-text mdi-navigation-menu"></i></a>
+		<a style="position: fixed; top:10px; right: 10px; z-index: 3;" class="btn-floating btn-flat btn-large waves-effect waves-light button-collapse blue darken-4 hide-on-large-only" data-activates="slide-out"><i class="white-text mdi-navigation-menu"></i></a>
 
-		<div class="parallax-container _middle" style="height: 100vh;" id="home">
+		<div class="parallax-container _middle animatedParent" style="height: 100vh;" id="home">
 			<div class="section">
-				<div class="container white-text">
-					<h1 class="hide-on-med-and-down center light white-text" style="font-size: 6.2rem; line-height: 6.62rem;">REAL ESTATE AND PROJECT SERVICES</h1>
+				<div class="container brown-text darken-2">
+					<h1 class="hide-on-med-and-down center light" style="font-size: 6.2rem; line-height: 6.62rem;">REAL ESTATE AND PROJECT SERVICES</h1>
 					<h2 class="hide-on-small-only hide-on-large-only">REAL ESTATE AND PROJECT SERVICES</h2>
 		            <h3 class="hide-on-med-and-up">Real Estate And Project Services</h3>
-		            <div class="center" style="padding: 40px 0px;">
-			            <h4 class="light" onclick="go_to('p0');">Our Services</h4>
+		            <div class="center" style="padding: 20px 0px;">
+			            <h4 class="light blue-text text-darken-4" onclick="go_to('p0');">Our Services</h4>
 			            <br>
-			            <a class="btn-floating btn-large waves-effect waves-light white" onclick="go_to('p0');"><i class="mdi-hardware-keyboard-arrow-down black-text"></i></a>
+			            <a class="btn-floating btn-large waves-effect waves-light blue darken-4" onclick="go_to('p0');"><i class="mdi-hardware-keyboard-arrow-down white-text"></i></a>
 			            <br>
 		            	<h4 class="light blink promo_but red-text light" onclick="go_to('promop');"><i class="mdi-action-star-rate"></i>Special Offer<i class="mdi-action-star-rate"></i></h4>
 		            </div>
@@ -79,7 +82,7 @@
 
 		
       	<div id="main">
-      		<div class="section white section scrollspy" id="p0">
+      		<div class="section white animatedParent" id="p0">
 		        <div class="container">
 		          	<h4 class="header">Our Sevices</h4>  
 		          	<br>
@@ -88,8 +91,8 @@
       						<i class="mdi-editor-attach-money white-text"></i>
 		          		</div>
 		          		<div class="list_with_icons_text">
-							<h6>Real Estate Valuation</h6>
-							<p class="light">Are you thinking about a mortgage, sale, purchase or rental of a property? Contact us for property valuation services to aptly aid your decision and processes. <a class="red-text" onclick="go_to('p1')">Read more</a>.</p>
+							<h6 class="blue-text text-darken-4" onclick="go_to('p1')">Real Estate Valuation</h6>
+							<p class="light"><span>Are you thinking about a mortgage, sale, purchase or rental of a property? Contact us for property valuation services to aptly aid your decision and processes. </span><a class="red-text" onclick="go_to('p1')"><b>Read more</b></a>.</p>
 						</div>
 					</div>
 					<div class="divider"></div>
@@ -99,8 +102,8 @@
       						<i class="mdi-action-done white-text"></i>
 		          		</div>
 		          		<div class="list_with_icons_text">
-							<h6>Project Management</h6>
-							<p class="light">Do you have a Real Estate goal you wish to achieve at a specific time within a necessary budget? If yes, then you have a project we can assist. <a class="red-text" onclick="go_to('p2')">Read more</a>.</p>
+							<h6 class="blue-text text-darken-4" onclick="go_to('p2')">Project Management</h6>
+							<p class="light">Do you have a Real Estate goal you wish to achieve at a specific time within a necessary budget? If yes, then you have a project we can assist. <a class="red-text" onclick="go_to('p2')"><b>Read more</b></a>.</p>
 						</div>
 					</div>
 
@@ -111,8 +114,8 @@
       						<i class="mdi-action-done-all white-text"></i>
 		          		</div>
 		          		<div class="list_with_icons_text">
-		          			<h6>Real Estate Investment Appraisal</h6>
-							<p class="light">Thinking of investing into real estate for sale or rental? Kindly talk to us for detailed feasibility studies and advice on the best model of your idea and aspiration. <a class="red-text" onclick="go_to('p3')">Read more</a>.</p>
+		          			<h6 class="blue-text text-darken-4">Real Estate Investment Appraisal</h6>
+							<p class="light">Thinking of investing into real estate for sale or rental? Kindly talk to us for detailed feasibility studies and advice on the best model of your idea and aspiration. <a class="red-text" onclick="go_to('p3')"><b>Read more</b></a>.</p>
 						</div>
 					</div>
 
@@ -123,8 +126,8 @@
       						<i class="mdi-action-home white-text"></i>
 		          		</div>
 		          		<div class="list_with_icons_text">
-		          			<h6>Estate Management</h6>
-							<p class="light">The management of the built environment is our prime concern. Give us your developed estate to manage, and we would ensure excellent maintenance, health and safety of your environment. <a class="red-text" onclick="go_to('p4')">Read more</a>.</p>
+		          			<h6 class="blue-text text-darken-4">Estate Management</h6>
+							<p class="light">The management of the built environment is our prime concern. Give us your developed estate to manage, and we would ensure excellent maintenance, health and safety of your environment. <a class="red-text" onclick="go_to('p4')"><b>Read more</b></a>.</p>
 						</div>
 					</div>
 					
@@ -135,17 +138,17 @@
       						<i class="mdi-image-landscape white-text"></i>
 		          		</div>
 		          		<div class="list_with_icons_text">
-		          			<h6>Land Management</h6>
-							<p class="light">Land is your most precious asset. Do you own land as an individual, a family/ group, a stool/skin, or a company? <a class="red-text" onclick="go_to('p5')">Read more</a>.</p>
+		          			<h6 class="blue-text text-darken-4">Land Management</h6>
+							<p class="light">Land is your most precious asset. Do you own land as an individual, a family/ group, a stool/skin, or a company? <a class="red-text" onclick="go_to('p5')"><b>Read more</b></a>.</p>
 						</div>
 					</div>
-
+					<br>
 					<div class="divider"></div>
 					<a onclick="go_to('contact_us')" class="btn blue-text btn-flat white">Contact Us</a>					
 		        </div>
 	      	</div>
 	      	<div class="divider"></div>
-	      	<div class="section white section scrollspy" id="p1">
+	      	<div class="section white animatedParent" id="p1">
 		        <div class="container">
 		          	<h4 class="header">Real Estate Valuation</h4>         
 	              	<p class="light">
@@ -157,7 +160,7 @@
 		        </div>
 	      	</div>
 	      	<div class="divider"></div>
-	      	<div class="section white section scrollspy" id="p2">
+	      	<div class="section white animatedParent" id="p2">
 	        	<div class="container">
 	          		<h4 class="header">Project Management</h4>
 	              	<p class="light">
@@ -166,7 +169,7 @@
 	        	</div>
 	      	</div>
 	      	<div class="divider"></div>
-			<div class="section white section scrollspy" id="p3">
+			<div class="section white animatedParent" id="p3">
 		        <div class="container">
 		          	<h4 class="header">Real Estate Investment Appraisal</h4>         
 	              	<p class="light">
@@ -178,7 +181,7 @@
 		        </div>
 	      	</div>
 	      	<div class="divider"></div>
-	      	<div class="section white section scrollspy" id="p4">
+	      	<div class="section white animatedParent" id="p4">
 	        	<div class="container">
 	          		<h4 class="header">Estate Management</h4>
 	              	<p class="light">
@@ -187,7 +190,7 @@
 	        	</div>
 	      	</div>
 	      	<div class="divider"></div>
-	      	<div class="section white section scrollspy" id="p5">
+	      	<div class="section white animatedParent" id="p5">
 	        	<div class="container">
 	          		<h4 class="header">Land Management</h4>
 	              	<p class="light">
@@ -199,33 +202,41 @@
 	    </div>
 
 	    <div class="parallax-container  grey lighten-4" style="height: 100vh;" id="promop">
-			<div class="slider scrollspy" id="promo" style="height: 100vh; background: transparent;">
-		        <ul class="slides" style="height: calc(100vh - 40px); background: transparent;">
+			<div class="slider animatedParent" id="promo" style="height: 100vh; background: transparent;">
+		        <ul class="slides" style="height: 100vh; background: transparent;">
 		      		<li>
 		      			<img src="img/2.jpg">
-				        <div class="caption center" style="top: 0px;">
-				          	<p class="black-text">Save up to 55% of the conventional Cost of home acquisition- Build your home with us!</p>
+				        <div class="overl" style="background-color: rgba(0,0,0,0.5);">
+					        <div class="caption center">
+					          	<p class="white-text">Save up to 55% of the conventional Cost of home acquisition- Build your home with us!</p>
+					        </div>
 				        </div>
 				    </li>
 				    <li>
 				    	<img src="img/2.jpg">
-				        <div class="caption left-align">
-				          	<p class="black-text">Pay for only the real cost of your home; cut out unearned profits</p>
-				        </div>
+				    	<div class="overl" style="background-color: rgba(0,0,0,0.5);">
+					        <div class="caption left-align">
+					          	<p class="white-text">Pay for only the real cost of your home; cut out unearned profits</p>
+					        </div>
+					    </div>
 				    </li>	                	      
 				    <li>
 				    	<img src="img/2.jpg">
-				        <div class="caption right-align">
-				          	<p class="black-text">Home acquisition should <span class="underline">not</span> cost an arm and a leg because it is fundamental</p>
-				        </div>
+				    	<div class="overl" style="background-color: rgba(0,0,0,0.5);">
+					        <div class="caption right-align">
+					          	<p class="white-text">Home acquisition should <span class="underline">not</span> cost an arm and a leg because it is fundamental</p>
+					        </div>
+					    </div>
 				    </li>					    
 				    <li>
 				    	<img src="img/2.jpg">
-				        <div class="caption right-align">
-				          	<p class="black-text">Why wait?</p>
-				          	<a onclick="go_to('footer');" class="btn-large white waves-effect waves-light tooltipped blue-text" data-position="bottom" data-delay="50" data-tooltip="Why wait? Contact us now">Kindly contact us</a>
-				          	<p class="black-text">Now and get started</p>
-				        </div>
+				    	<div class="overl" style="background-color: rgba(0,0,0,0.5);">
+					        <div class="caption right-align">
+					          	<p class="white-text">Why wait?</p>
+					          	<a onclick="go_to('footer');" class="btn-large white waves-effect waves-light tooltipped blue-text" data-position="bottom" data-delay="50" data-tooltip="Why wait? Contact us now">Kindly contact us</a>
+					          	<p class="white-text">Now and get started</p>
+					        </div>
+					    </div>
 				    </li>
 	        	</ul>
 			</div>
@@ -240,7 +251,7 @@
 		</div>
 
       	<div class="divider"></div>
-		<div class="section grey lighten-4" id="contact_us">
+		<div class="section grey lighten-4 animatedParent" id="contact_us">
 	    	<div class="container">
 	    	<br><br><br>
 	    		<h5 class="center flow-text">Get In Touch</h5>
@@ -301,5 +312,8 @@
             </div>
           </div>
         </footer>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="js/css3-animate-it.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
