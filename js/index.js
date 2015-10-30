@@ -18,7 +18,7 @@ $( document ).ready(function(){
 	go_to = go_to_this;
 
 	function attach_anim(){
-		var a_types = ['fadeInUpShort','bounceInUp', 'lightSpeedInLeft', 'bounceInRight', 'fadeInUp', 'growIn', 'flipInY', 'fadeInRightShort', 'fadeInUpShort', 'fadeInDownShort', 'flipInX', 'lightSpeedInDown', 'lightSpeedInUp', 'fadeInLeftShort'];
+		var a_types = ['fadeInUp', 'fadeInUpShort','bounceInUp', 'lightSpeedInLeft', 'bounceInRight', 'growIn', 'flipInY', 'fadeInRightShort', 'fadeInUpShort', 'fadeInDownShort', 'flipInX', 'lightSpeedInDown', 'lightSpeedInUp', 'fadeInLeftShort'];
 		$.each($('.animatedParent *:not(div, img, .blink)'), function(i, val){
 			$(val).addClass('slower animated ' + a_types[i % a_types.length]).attr('data-id', i);
 		});
